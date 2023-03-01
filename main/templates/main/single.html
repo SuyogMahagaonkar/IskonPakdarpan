@@ -1,0 +1,450 @@
+{% extends 'main/base.html' %}
+{% block main_head %}
+
+<style type="text/css">
+	
+/*****************globals*************/
+body {
+ background-color: #e2eaef;
+  overflow-x: hidden; }
+
+.tab-pane {
+	width: 450px;
+	height: auto;
+}
+.card1{
+	margin-top: 10px;
+    padding-right: 2em;
+    line-height: 1.5em;
+    border-radius: 50px;
+    background: papayawhip;}
+li img {
+  border-left: solid 1px #e2eaef;
+  border-right: solid 1px #e2eaef;
+}
+
+.preview {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  @media screen and (max-width: 996px) {
+    .preview {
+      margin-bottom: 20px; } 
+    .tab-pane {
+    	width: 100%
+    }
+  }
+
+.preview-pic {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.preview-thumbnail.nav-tabs {
+  border: none;
+  margin-top: 15px; }
+  .preview-thumbnail.nav-tabs li {
+    width: 13%;
+    margin-right: 2.5%; }
+    .preview-thumbnail.nav-tabs li img {
+      max-width: 100%;
+      display: block; }
+    .preview-thumbnail.nav-tabs li a {
+      padding: 0;
+      margin: 0; }
+    .preview-thumbnail.nav-tabs li:last-of-type {
+      margin-right: 0; }
+
+.tab-content {
+  overflow: hidden; }
+  .tab-content img {
+    width: 100%;
+    -webkit-animation-name: opacity;
+            animation-name: opacity;
+    -webkit-animation-duration: .3s;
+            animation-duration: .3s; }
+
+.card {
+  margin-top: 10px;
+  background: #fff;
+  padding: 2em;
+  line-height: 1.5em; }
+
+@media screen and (min-width: 997px) {
+  .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; } }
+
+.details {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.colors {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.product-title, .price, .sizes, .colors {
+  text-transform: UPPERCASE;
+  font-weight: normal; }
+
+.checked, .price span {
+  color: #be2714; }
+
+.product-title, .rating, .product-description, .price, .vote, .sizes {
+  margin-bottom: 15px; }
+
+.product-title {
+  margin-top: 0; }
+
+.size {
+  margin-right: 10px; }
+  .size:first-of-type {
+    margin-left: 40px; }
+
+
+@-webkit-keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(3);
+            transform: scale(3); }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1); } }
+#gallery li {
+display: inline;
+margin-right: 3px;
+}
+#gallery #main-img {
+background: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg) no-repeat 0 0;
+
+}
+
+#more {display: none;}
+</style>
+<script type="text/javascript">
+    
+$(document).ready(function() {
+    // Image swap on hover
+    $("#gallery li img").hover(function(){
+        $('#main-img').attr('src',$(this).attr('src').replace('thumb/', ''));
+    });
+    // Image preload
+    var imgSwap = [];
+     $("#gallery li img").each(function(){
+        imgUrl = this.src.replace('thumb/', '');
+        imgSwap.push(imgUrl);
+    });
+    $(imgSwap).preload();
+});
+$.fn.preload = function() {
+    this.each(function(){
+        $('<img/>')[0].src = this;
+    });
+}
+ 
+
+</script>
+<script type="text/javascript">
+	function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+</script>
+{% endblock main_head %}
+{% block main_body %}
+{% load static %}
+{% block content %}
+<main class="container my-4">
+	<!-- Featured Products -->
+
+
+	<span class="my-4 border-bottom pb-1" style="font-size:25px;">{{product.product_name}}</span>
+	<div class="row">
+		<!-- Images -->
+		<div class="col-md-4">
+			<br><br>
+			<div class="container">
+				 {% include 'main/img-zooming.html' %}
+			</div>
+		</div>
+		<div class="col-md-8"><br>
+			<b>Ingredients:</b><br><br>
+			<p style="white-space: pre-line;white-space: pre-wrap;">{{product.ingredients}}</p>
+			<hr/>
+			<table class="table table-bordered">
+				<tr>
+					<th>Calories <small style="font-size:10px;">(in kcal)</small></th>
+					<th><h6 class="price"><p>
+
+						<span class="item_price" style="font-size:25px;">{{product.TotalCal}}</span> </p> </h6></th>
+				</tr>
+				<tr>
+					<th>Time to Make <small style="font-size:10px;">(in min)</small></th>
+					<th><h6 class="price"><p>
+
+						<span class="item_price" style="font-size:25px;">{{product.TotalTime}}</span> </p> </h6></th>
+				</tr>
+				<tr>
+					<th>Pure Vegetarian<sub style="font-size:13px;"></sub></th>
+					<td>
+
+				{%if product.is_Veg%}
+						<span>&#9989;</span>
+				{% else%}
+						<span>&#10060;</span>
+
+						{%endif%}
+
+					</td>
+				</tr>
+				<tr>
+					<th>Sugar Free<sub style="font-size:13px;"></sub></th>
+					<td>
+
+				{%if product.is_SugarFree%}
+						<span>&#9989;</span>
+				{% else%}
+						<span>&#10060;</span>
+
+						{%endif%}
+
+					</td>
+				</tr>
+				<tr>
+					<th>High Protein<sub style="font-size:13px;"></sub></th>
+					<td>
+
+				{%if product.is_HighProtein %}
+						<span>&#9989;</span>
+				{% else%}
+						<span>&#10060;</span>
+
+						{%endif%}
+
+					</td>
+				</tr>
+				<tr>
+					<th>Gluttent Free<sub style="font-size:13px;"></sub></th>
+					<td>
+
+				{%if product.is_GluttentFree %}
+						<span>&#9989;</span>
+				{% else%}
+						<span>&#10060;</span>
+
+						{%endif%}
+
+					</td>
+				</tr>
+				<tr>
+					<th>Sattvik<sub style="font-size:13px;"></sub></th>
+					<td>
+
+				{%if product.is_Sattvik %}
+						<span>&#9989;</span>
+				{% else%}
+						<span>&#10060;</span>
+
+						{%endif%}
+
+					</td>
+				</tr>
+
+				<tr>
+					<th>Vegan<sub style="font-size:13px;"></sub></th>
+					<td>
+
+				{%if product.is_Vegan %}
+						<span>&#9989;</span>
+				{% else%}
+						<span>&#10060;</span>
+
+						{%endif%}
+
+					</td>
+				</tr>
+
+
+			</table>
+
+			 {% if sizes %}<div class="action">
+              <div>
+                    <a p_id="{{product.product_id}}" class="btn btn-success oprbtn pt-1 pb-1 pr-2 pl-2" id="ord{{product.product_id}}" style="padding: 5px 10px 5px 5px;color:white;">Order Now</a>
+                    <div id="ord{{product.product_id}}sizesof" style="display: none;">
+                          <p>Select any Size for Order Now</p>
+                          {% for me in sizes %}
+                          <form method="GET" style="display: inline;" action="/order_now">
+                            <input type="text" name="prod_id" value="{{product.product_id}}" style="display: none;">
+                            <input type="size" name="prod_size" value="{{me.size}}" style="display: none;">
+                            <button type="submit" class="btn btn-info pt-1 pb-1 pr-2 pl-2">{{me.size}}</button>
+                          </form>
+                          {% endfor %}
+                        </div>
+                        <a p_id="{{product.product_id}}" class="btn btn-primary oprbtn pt-1 pb-1 pr-2 pl-2"  style="padding: 5px 10px 5px 5px;color:white;" id="atc{{product.product_id}}">Add to Cart </a>
+                        <div id="atc{{product.product_id}}sizesof" style="display: none;">
+                          <p>Select any Size for Add To Cart</p>
+                          {% for me in sizes %}
+                          <a prod_id="{{product.product_id}}" class="btn btn-info pt-1 pb-1 pr-2 pl-2 add_to_cart">{{me.size}}</a>
+                          {% endfor %}
+                        </div>
+                  </div>
+            </div>
+            {% else %}
+            <div style="display:inline" hidden>
+                <form method="GET" style="display: inline;" action="/order_now">
+                            <input type="text" name="prod_id" value="{{product.product_id}}" style="display: none;">
+                            <button type="submit" class="btn btn-secondary pt-1 pb-1 pr-2 pl-2">Order Now</button>
+                          </form>
+                  <a prod_id="{{product.product_id}}" class="btn btn-primary pt-1 pb-1 pr-2 pl-2 add_to_cart " style="color:white;"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to Cart</a>
+              </div>
+            {% endif %}
+		</div>
+	</div>
+<hr>
+	<div class="row">
+		<div class="col-md-12">
+			<h3 class="my-3">Detail</h3>
+			<!-- Detail -->
+			<table class="table table-bordered">
+				{%if brand%}<tr>
+					<th>Brand</th>
+					<td>{{product.brand}}</td>
+				</tr>{%endif%}
+				<tr>
+					<th>Category</th>
+					<td><a href="/MenuFilter/{{product.category}},{{product.subcategory}}">{{product.subcategory}}&nbsp;( {{product.category}} )</a></td>
+				</tr>
+				<tr>
+					<th>Steps</th>
+					<td style="white-space: pre-line;white-space: pre-wrap;height: 100px;overflow-y: scroll;" >{{product.specs}}</td>
+				</tr>
+			</table>
+		</div>
+		<!-- Reviews -->
+		{%if avg_reviews%}<div class="col-md-12">
+			<h3 class="my-3">Reviews - <span class="avg-rating">{{avg_reviews.avg_rating}}</span>/5 <i class="fa fa-star text-warning"></i>
+				{% if user.is_authenticated %}
+				{% if canAdd %}
+				<button data-toggle="modal" data-target="#productReview" type="button" class="btn btn-warning btn-sm float-right reviewBtn">Add Review</button>
+				{% endif %}
+				{% endif %}
+			</h3>
+	{% if user.is_authenticated %}
+	<!-- Product Review -->
+	<div class="modal fade" id="productReview" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  <div class="modal-dialog" style="max-width:570px">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="exampleModalLabel">Add Product Review</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	      	<form method="post" id="addForm" action="">
+	      		{% csrf_token %}
+		      	<table class="table table-bordered">
+		      		{{reviewForm.as_table}}
+		      		<tr>
+		      			<td colspan="2">
+		      				<button type="submit" class="btn btn-primary">Submit</button>
+		      				<input type="reset" class="btn btn-dark" value="Reset" id="reset" />
+		      			</td>
+		      		</tr>
+		      	</table>
+		      	<p class="ajaxRes"></p>
+	      </form>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+	<!-- Product Review End -->
+	{% endif %}
+			</h3>
+			 <div class="float-right col-12">
+
+              {% if request.user.is_authenticated %}
+                <form method="post">{% csrf_token %}
+                  <div class="input-group mb-3 ">
+                    <input type="text" class="form-control form-control-sm" placeholder="Enter Your Review" aria-label="Enter Your Review" aria-describedby="button-addon2" name="review">
+                    <div class="input-group-append">
+                      <button type="submit" style="border: none;" class="btn-secondary form-control-sm" type="button" id="button-addon2"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                    </div>
+                  </div>
+                </form>
+              {% endif %}
+
+              <div style="height: 250px; overflow-y:scroll;">
+                {% for review in product_review %}
+				  <blockquote class="blockquote col-8 text-right card1 " style="left: 27%;">
+						  <span style="font-size:14px;">{{review.review}}</span>
+						  <footer class="blockquote-footer">{{review.user.get_full_name}}
+
+						  </footer>
+						</blockquote>
+                  <hr>
+                {% endfor %}
+              </div>
+            </div>
+		</div>{%endif%}
+	</div>
+	<!-- Related Products -->
+	<h3 class="mt-4 mb-3 border-bottom pb-1">Related Products</h3>
+	<div class="row">
+		{% for product in related %}
+		{% include 'main/Card-layout.html' %}
+		{% endfor %}
+	</div>
+    {% endblock %}
+
+</main>
+
+<script type="text/javascript">
+    $('.oprbtn').click(function () {
+      var p_id = $(this).attr("p_id");
+      document.getElementById('ord'+p_id).style.display = 'none';
+      document.getElementById('atc'+p_id).style.display = 'none';
+      document.getElementById(this.id+'sizesof').style.display = 'block';
+    });
+  </script>
+{% endblock main_body %}

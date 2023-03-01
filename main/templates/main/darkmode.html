@@ -1,0 +1,134 @@
+<style>
+    // ===================
+// DARK MoDE
+// ===================
+.darkmode {
+	--text-color: #f1f1f1;
+	--text-invert: #0f0f0f;
+	--channelText: #aaa;
+	--background: #0f0f0f;
+	--placeholderBg: #232323;
+	--placeholderGradient: rgba(255, 255, 255, 0.05);
+}
+// darkmode toggle btn
+.checkbox-wrapper {
+	.tgl {
+		display: none;
+		& + .tgl-btn {
+			background: darken(#fff, 80%);
+			border-radius: 2em;
+			padding: 6px;
+			transition: all 0.4s ease;
+			outline: 0;
+			display: block;
+			width: 4em;
+			height: 2em;
+			position: relative;
+			cursor: pointer;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			&::before,
+			&::after {
+				position: relative;
+				display: block;
+				content: "";
+				height: 100%;
+			}
+			&::before {
+				display: none;
+				width: 50%;
+			}
+			&::after {
+				left: 0;
+				border-radius: 50%;
+				background: #fff;
+				width: unset;
+				aspect-ratio: 1/1;
+				transition: all 0.2s ease;
+			}
+		}
+		&:checked + .tgl-btn {
+			background: #f0f0f0;
+			&:after {
+				transform: translateX(150%);
+				background: darken(#fff, 80%);
+			}
+		}
+	}
+	.icon {
+		width: 20px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		color: var(--text-invert);
+		&_sun {
+			left: 10%;
+		}
+		&_moon {
+			right: 10%;
+		}
+	}
+}
+
+</style>
+<!-- Darkmode Toggle -->
+<section class="container pt-5">
+	<div class="checkbox-wrapper">
+		<input class="tgl" id="darkmode" type="checkbox" />
+		<label class="tgl-btn" for="darkmode">
+			<svg class="icon icon_sun" width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<circle cx="11.9998" cy="11.9998" r="5.75375" fill="currentColor" />
+				<g>
+					<circle cx="3.08982" cy="6.85502" r="1.71143" transform="rotate(-60 3.08982 6.85502)" fill="currentColor" />
+					<circle cx="3.0903" cy="17.1436" r="1.71143" transform="rotate(-120 3.0903 17.1436)" fill="currentColor" />
+					<circle cx="12" cy="22.2881" r="1.71143" fill="currentColor" />
+					<circle cx="20.9101" cy="17.1436" r="1.71143" transform="rotate(-60 20.9101 17.1436)" fill="currentColor" />
+					<circle cx="20.9101" cy="6.8555" r="1.71143" transform="rotate(-120 20.9101 6.8555)" fill="currentColor" />
+					<circle cx="12" cy="1.71143" r="1.71143" fill="currentColor" />
+				</g>
+				</circle>
+			</svg>
+			<svg class="icon icon_moon" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 50 50">
+				<path d="M 43.81 29.354 C 43.688 28.958 43.413 28.626 43.046 28.432 C 42.679 28.238 42.251 28.198 41.854 28.321 C 36.161 29.886 30.067 28.272 25.894 24.096 C 21.722 19.92 20.113 13.824 21.683 8.133 C 21.848 7.582 21.697 6.985 21.29 6.578 C 20.884 6.172 20.287 6.022 19.736 6.187 C 10.659 8.728 4.691 17.389 5.55 26.776 C 6.408 36.163 13.847 43.598 23.235 44.451 C 32.622 45.304 41.28 39.332 43.816 30.253 C 43.902 29.96 43.9 29.647 43.81 29.354 Z" fill="currentColor" />
+			</svg>
+		</label>
+	</div>
+</section>
+<script>
+    // =====================
+// Darkmode
+// =====================
+const body = document.querySelector("body"),
+	drkTgl = document.querySelector("#darkmode"),
+	drkMd = {
+		on() {
+			drkTgl.checked = true;
+			body.classList.add("darkmode");
+		},
+		off() {
+			drkTgl.checked = false;
+			body.classList.remove("darkmode");
+		}
+	};
+// Check system preference
+if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+	drkMd.on();
+} else {
+	drkMd.off();
+}
+
+// Watch for system preference change
+window
+	.matchMedia("(prefers-color-scheme: dark)")
+	.addEventListener("change", (event) => {
+		const colorPref = event.matches ? drkMd.on() : drkMd.off();
+		return colorPref;
+	});
+// Darkmode Toggle btn
+drkTgl.addEventListener("change", function () {
+	const colorPref = drkTgl.checked ? drkMd.on() : drkMd.off();
+	return colorPref;
+});
+</script>

@@ -1,0 +1,4 @@
+django-responsive2
+django-crispy-forms
+pillow
+pycryptodome

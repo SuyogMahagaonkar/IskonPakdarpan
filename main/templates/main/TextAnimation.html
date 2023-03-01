@@ -1,0 +1,112 @@
+  <style>
+
+	h1 {
+  color: white;
+  font-family: tahoma;
+  font-size: 4vw;
+  font-weight: 100;
+  line-height: 1.5;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  width: 700vw;
+}
+
+h1 span {
+  font-size: 4vw;
+  margin-left: 4vw;
+}
+
+.message {
+  background-color: yellow;
+  color: #333;
+  display: block;
+  font-weight: 800;
+  overflow: hidden;
+  position: absolute;
+  padding-left: 0.5rem;
+
+  top: 0.2rem;
+  left: 17vw;
+  animation: openclose 7s ease-in-out infinite;
+}
+
+.word1, .word2, .word3 {
+  font-family: tahoma;
+}
+
+@keyframes openclose {
+  0% {
+    top: 0.2vw;
+    width: 0;
+  }
+  5% {
+    width: 0;
+  }
+  15% {
+    width: 35vw;
+  }
+  30% {
+    top: 0.2vw;
+    width: 35vw;
+  }
+  33% {
+    top: 0.2vw;
+    width: 0;
+  }
+  35% {
+    top: 0.2vw;
+    width: 0;
+  }
+  38% {
+    top: -5.8vw;
+
+  }
+  48% {
+    top: -5.8vw;
+    width: 32vw;
+  }
+  62% {
+    top: -5.8vw;
+    width: 32vw;
+  }
+  66% {
+    top: -5.8vw;
+    width: 0;
+    text-indent: 0;
+  }
+  71% {
+    top: -12vw;
+    width: 0;
+    text-indent: 0vw;
+  }
+  86% {
+    top: -12vw;
+    width: 35vw;
+  }
+  95% {
+    top: -12vw;
+    width: 35vw;
+  }
+  98% {
+    top: -12vw;
+    width: 0;
+    text-indent: 0vw;
+  }
+  100% {
+    top: 0;
+    width: 0;
+    text-indent: 0;
+  }
+}
+</style>
+
+            <div style="    padding-left: 13%;padding-top: 15%;padding-bottom:5%;"><h1>
+  <span>I Like</span>
+  <div class="message">
+    <div class="word1">Healthy Food</div>
+    <div class="word2">To Explore</div>
+    <div class="word3">To be Healthy</div>
+  </div>
+</h1></div>

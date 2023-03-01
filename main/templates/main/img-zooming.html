@@ -1,0 +1,223 @@
+
+
+
+
+<head>
+
+  <meta charset="UTF-8">
+  
+<link rel="apple-touch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
+<meta name="apple-mobile-web-app-title" content="CodePen">
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+
+<link rel="mask-icon" type="" href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
+
+
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet' href='https://k1ngzed.com/dist/swiper/swiper.min.css'>
+<link rel='stylesheet' href='https://k1ngzed.com/dist/EasyZoom/easyzoom.css'>
+  
+<style>
+
+.product__carousel {
+  display: block;
+  max-width: 700px;
+  margin: 1em auto 3em;
+}
+.product__carousel a {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.product__carousel .gallery-top {
+	border: 1px solid #ebebeb;
+	border-radius: 13px;
+	margin-bottom: 5px;
+}
+.product__carousel .gallery-top .swiper-slide {
+	position: relative;
+	overflow: hidden;
+}
+.product__carousel .gallery-top .swiper-slide a {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    font-size: medium;}
+.product__carousel .gallery-top .swiper-slide a img {
+	width: 100%;
+	height: 100%;
+	-o-object-fit: contain;
+	   object-fit: contain;
+}
+.product__carousel .gallery-top .swiper-slide .easyzoom-flyout img {
+	min-width: 100%;
+	min-height: 100%;
+}
+.product__carousel .swiper-button-next.swiper-button-white,
+.product__carousel .swiper-button-prev.swiper-button-white {
+	color: #ff3720;
+}
+.product__carousel .gallery-thumbs .swiper-slide {
+	position: relative;
+	transition: border .15s linear;
+	border: 1px solid #ebebeb;
+	border-radius: 3px;
+	cursor: pointer;
+	overflow: hidden;
+  height: calc(100% - 2px);
+}
+.product__carousel .gallery-thumbs .swiper-slide.swiper-slide-thumb-active {
+	border-color: #000;
+}
+.product__carousel .gallery-thumbs .swiper-slide img {
+	position: absolute;
+	left: 50%;
+	top: 63%;
+    transform: translate(-50%,-50%);
+    max-width: 127%;
+
+}
+</style>
+
+  <script>
+  window.console = window.console || function(t) {};
+</script>
+
+  
+  
+  <script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+
+</head>
+
+<body translate="no" >
+  <div class="product__carousel">
+
+
+  <!-- Swiper and EasyZoom plugins start -->
+  <div class="swiper-container gallery-top">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide easyzoom easyzoom--overlay">
+        {%if product.URL%}<a href="{{product.URL}}">
+          <img style="height:280px;" src="{{product.URL}}" alt=""/>
+        </a>
+        {% else%}
+        <a href="{{product.URL}}">
+          <img style="height:280px;" src="http://eurogrid.in/wp-content/uploads/2017/06/product_image_not_available.png" alt=""/>
+        </a>
+        {%endif%}
+      </div>
+        {%if product.image2%}
+      <div class="swiper-slide easyzoom easyzoom--overlay">
+        <a href="{{product.image2.url}}">
+          <img src="{{product.image2.url}}" alt=""/>
+        </a>
+      </div>{%endif%}
+        {%if product.image3%}
+      <div class="swiper-slide easyzoom easyzoom--overlay">
+        <a href="{{product.image3.url}}">
+          <img src="{{product.image3.url}}" alt=""/>
+        </a>
+      </div>{%endif%}
+        {%if product.image4%}
+      <div class="swiper-slide easyzoom easyzoom--overlay">
+        <a href="{{product.image4.url}}">
+          <img src="{{product.image4.url}}" alt=""/>
+        </a>
+      </div>{%endif%}
+
+
+
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next swiper-button-white"></div>
+    <div class="swiper-button-prev swiper-button-white"></div>
+  </div>
+  <div class="swiper-container gallery-thumbs">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="{{product.image1.url}}" alt="">
+      </div>
+        {%if product.image2%}
+      <div class="swiper-slide">
+        <img src="{{product.image2.url}}" alt="">
+      </div>{%endif%}
+        {%if product.image3%}
+      <div class="swiper-slide">
+        <img src="{{product.image3.url}}" alt="">
+      </div>{%endif%}
+        {%if product.image4%}
+      <div class="swiper-slide">
+        <img src="{{product.image4.url}}" alt="">
+      </div>{%endif%}
+
+    </div>
+  </div>
+  <!-- Swiper and EasyZoom plugins end -->
+</div>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-8216c69d01441f36c0ea791ae2d4469f0f8ff5326f00ae2d00e4bb7d20e24edb.js"></script>
+
+  <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+<script src='https://k1ngzed.com/dist/swiper/swiper.min.js'></script>
+<script src='https://k1ngzed.com/dist/EasyZoom/easyzoom.js'></script>
+      <script id="rendered-js" >
+// product Gallery and Zoom
+
+// activation carousel plugin
+var galleryThumbs = new Swiper('.gallery-thumbs', {
+  spaceBetween: 5,
+  freeMode: true,
+  watchSlidesVisibility: true,
+  watchSlidesProgress: true,
+  breakpoints: {
+    0: {
+      slidesPerView: 3 },
+
+    992: {
+      slidesPerView: 4 } } });
+
+
+
+var galleryTop = new Swiper('.gallery-top', {
+  spaceBetween: 10,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev' },
+
+  thumbs: {
+    swiper: galleryThumbs } });
+
+
+// change carousel item height
+// gallery-top
+let productCarouselTopWidth = $('.gallery-top').outerWidth();
+$('.gallery-top').css('height', productCarouselTopWidth);
+
+// gallery-thumbs
+let productCarouselThumbsItemWith = $('.gallery-thumbs .swiper-slide').outerWidth();
+$('.gallery-thumbs').css('height', productCarouselThumbsItemWith);
+
+// activation zoom plugin
+var $easyzoom = $('.easyzoom').easyZoom();
+//# sourceURL=pen.js
+    </script>
+
+  
+
+</body>
+
+
+ 

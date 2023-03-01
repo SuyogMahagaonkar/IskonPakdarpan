@@ -1,0 +1,40 @@
+<footer class="pt-4 my-md-5 pt-md-5 border-top container ">
+    <div class="row col-lg-12 col-sm-12 col-md-12 col-xl-12 col-xs-12" style="padding:5%;">
+        <div class="col-md">
+        <a >{% include "main/logo.html" %}</a>
+<!--        <small class="d-block mb-3 text-muted" hidden>&emsp;&emsp;&emsp;&emsp;&copy; Sept 2022</small>-->
+        </div>
+        <div class="col-6 col-md">
+        <h5>Location Specific</h5>
+        <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="http://127.0.0.1:8000/search/?query=andhra">Andhra Recipies</a></li>
+            <li><a class="text-muted" href="http://127.0.0.1:8000/search/?query=south%20indian">South Indian</a></li>
+            <li><a class="text-muted" href="http://127.0.0.1:8000/search/?query=mahara">Maharashrian Recipies</a></li>
+            <li><a class="text-muted" href="http://127.0.0.1:8000/search/?query=karnatak">Karnataka</a></li>
+            <li><a class="text-muted" href="http://127.0.0.1:8000/search/?query=kashmir">kashmiri Recipies</a></li>
+            <li><a class="text-muted" href="http://127.0.0.1:8000/search/?query=bengali">Bengali Recipies</a></li>
+            <li><a class="text-muted" href="http://127.0.0.1:8000/products/Dessert">Dessert</a></li>
+        </ul>
+        </div>
+        <div class="col-6 col-md">
+        <h5>International Recipies</h5>
+        <ul class="list-unstyled text-small">
+
+            <li><a class="text-muted" href="http://127.0.0.1:8000/search/?query=italian">Italian</a></li>
+            <li><a class="text-muted" href="http://127.0.0.1:8000/search/?query=continental">continental</a></li>
+            <li><a class="text-muted" href="http://127.0.0.1:8000/search/?query=bengali">Arabian Recipies</a></li>
+            <li><a class="text-muted" href="http://127.0.0.1:8000/search/?query=thai">Thai Recipies</a></li>
+            <li><a class="text-muted" href="http://127.0.0.1:8000/search/?query=asian">Asian Recipies</a></li>
+        </ul>
+        </div>
+        <div class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+            <li><a class="text-muted" href="{% url 'Team' %}" >Team</a></li>
+           <li><a class="text-muted" href="{% url 'contact'%}">Contact Us</a></li>
+<!--            <li><a class="text-muted" href="#">Privacy</a></li>-->
+<!--            <li><a class="text-muted" href="#">Terms</a></li>-->
+        </ul>
+        </div>
+    </div>
+    </footer>

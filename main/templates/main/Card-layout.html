@@ -1,0 +1,29 @@
+<div class="col-3 p-0 pr-2">
+    <div class="thumb-wrapper card">
+        <center>
+            <div class="img-box"> {%if product.URL%} <a href="{{product.product_id}}">
+                    <img src="{{product.URL}}" class="img-responsive img-fluid" alt="" style="height:200px;" href="{{product.product_id}}">
+                </a> {%else%} <a href="{{product.product_id}}">
+                    <img src="http://eurogrid.in/wp-content/uploads/2017/06/product_image_not_available.png" class="img-responsive img-fluid" alt="" style="height:200px;" href="{{product.product_id}}">
+                </a> {%endif%} </div>
+        </center>
+        <div class="thumb-content">
+            <p>
+                <a href="{{product.product_id}}" style="text-decoration: none; color: #231f20" class="cut-text">
+                    {{product.product_name}}</a>
+            </p>
+            <!--											<p class="item-price"><strike><i class="fa fa-inr"-->
+            <!--														aria-hidden="true"></i>{{product.price_not}}</strike><span><i-->
+            <!--														class="fa fa-inr" aria-hidden="true"></i>{{product.price}}</span> {%if product.tag_title%}<span class="badge badge-{{product.tag_color}}" style="float:right;color:#fff;">{{product.tag_title}}</span>{%endif%}</p>-->
+        </div>
+    </div>
+</div>
+<style>
+    .cut-text {
+        display: -webkit-box;
+        max-width: 200px;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+</style>

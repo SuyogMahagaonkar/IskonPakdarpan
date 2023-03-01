@@ -1,0 +1,577 @@
+{% extends 'main/base.html' %} {% load static %} {% load crispy_forms_tags %} {% block main_head %} {% load app_tags %} <style type="text/css">
+    body {
+        Background-image: url(https://cdnb.artstation.com/p/assets/images/images/003/704/285/large/dusica-neskovic-muzejdanfinal.jpg?1476637309);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {}
+
+    section {
+        padding: 60px 0;
+    }
+
+    a,
+    a:hover,
+    a:focus,
+    a:active {
+        text-decoration: none;
+        outline: none;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .site-heading h2 {
+        display: block;
+        font-weight: 700;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    .site-heading h2 span {
+        color: #ED2553;
+    }
+
+    .site-heading h4 {
+        display: inline-block;
+        padding-bottom: 20px;
+        position: relative;
+        text-transform: capitalize;
+        z-index: 1;
+    }
+
+    .site-heading h4::before {
+        background: #ff5a6e none repeat scroll 0 0;
+        bottom: 0;
+        content: "";
+        height: 2px;
+        left: 50%;
+        margin-left: -25px;
+        position: absolute;
+        width: 50px;
+    }
+
+    .site-heading h2 span {
+        color: #ff5a6e;
+    }
+
+    .site-heading {
+        margin-bottom: 60px;
+        overflow: hidden;
+        margin-top: -5px;
+    }
+
+    .team-area .single-item {
+        margin-bottom: 30px;
+    }
+
+    .team-area .item .thumb {
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+    }
+
+    .team-area .item .thumb::after {
+        background: #232323 none repeat scroll 0 0;
+        content: "";
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        transition: all 0.35s ease-in-out;
+        -webkit-transition: all 0.35s ease-in-out;
+        -moz-transition: all 0.35s ease-in-out;
+        -ms-transition: all 0.35s ease-in-out;
+        -o-transition: all 0.35s ease-in-out;
+        width: 100%;
+    }
+
+    .team-area .team-items .item:hover .thumb::after {
+        opacity: 0.7;
+    }
+
+    .team-area .item .thumb .overlay {
+        top: -100%;
+        left: 0;
+        padding: 20px;
+        position: absolute;
+        text-align: center;
+        -webkit-transition: all 0.35s ease-in-out;
+        -moz-transition: all 0.35s ease-in-out;
+        -ms-transition: all 0.35s ease-in-out;
+        -o-transition: all 0.35s ease-in-out;
+        transition: all 0.35s ease-in-out;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .team-area .item:hover .thumb .overlay {
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+    }
+
+    .team-area .item .thumb .overlay p {
+        color: #ffffff;
+    }
+
+    .team-area .item .thumb .overlay h4 {
+        color: #ffffff;
+        display: inline-block;
+        position: relative;
+        text-transform: uppercase;
+    }
+
+    .team-area .item .thumb img {
+        -webkit-transition: all 0.35s ease-in-out;
+        -moz-transition: all 0.35s ease-in-out;
+        -ms-transition: all 0.35s ease-in-out;
+        -o-transition: all 0.35s ease-in-out;
+        transition: all 0.35s ease-in-out;
+    }
+
+    .team-area .item:hover .thumb img {
+        opacity: .6;
+    }
+
+    .team-area .item .thumb .social li {
+        display: inline-block;
+    }
+
+    .team-area .item .thumb .social li a {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        color: #ffffff;
+        display: inline-block;
+        height: 40px;
+        line-height: 40px;
+        margin: 0 2px;
+        text-align: center;
+        width: 40px;
+    }
+
+    .team-area .info {
+        background: #ffffff none repeat scroll 0 0;
+        -moz-box-shadow: 0 0 10px #cccccc;
+        -webkit-box-shadow: 0 0 10px #cccccc;
+        -o-box-shadow: 0 0 10px #cccccc;
+        box-shadow: 0 0 10px #cccccc;
+        padding: 40px 20px 20px;
+        position: relative;
+        text-align: center;
+        z-index: 9;
+    }
+
+    .team-area .info .message {
+        height: 50px;
+        line-height: 40px;
+        margin-left: -25px;
+        margin-top: -25px;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        width: 50px;
+    }
+
+    .team-area .info .message a {
+        background: #fff none repeat scroll 0 0;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        -moz-box-shadow: 0 0 10px #cccccc;
+        -webkit-box-shadow: 0 0 10px #cccccc;
+        -o-box-shadow: 0 0 10px #cccccc;
+        box-shadow: 0 0 10px #cccccc;
+        box-sizing: border-box;
+        color: #ff5a6e;
+        display: inline-block;
+        font-size: 20px;
+        height: 50px;
+        line-height: 50px;
+        width: 50px;
+    }
+
+    .team-area .info .message a i {
+        font-weight: 500;
+    }
+
+    .team-area .info h4 {
+        font-weight: 600;
+        margin-bottom: 5px;
+        text-transform: capitalize;
+    }
+
+    .team-area .info span {
+        color: #ff5a6e;
+        font-family: "Poppins", sans-serif;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .team-area .social li.twitter a {
+        background-color: #00b6f1;
+    }
+
+    .team-area .social li.pinterest a {
+        background-color: #bd081c;
+    }
+
+    .team-area .social li.facebook a {
+        background-color: #3b5998;
+    }
+
+    .team-area .social li.google-plus a {
+        background-color: #df4a32;
+    }
+
+    .team-area .social li.vimeo a {
+        background-color: #1ab7ea;
+    }
+
+    .team-area .social li.instagram a {
+        background-color: #cd486b;
+    }
+
+    .team-area .social li.whatsapp a {
+        background-color: #075e54;
+    }
+</style>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/vaakash/socializer@2f749eb/css/socializer.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"> {% endblock main_head %} {% block main_body %} <section id="team" class="team-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="site-heading text-center">
+                    <h2>About <span>Us</span>
+                    </h2>
+                    <h4>What we are? hear from us</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 col-sm-12 col-md-12 col-xl-12 col-xs-12" style="padding:1%;text-align:justify;">
+            Everyone likes to eat something new and healthy daily. But it is a dilemma to find something that matches their preferences. This predicament leaded to solutions that involved food recommendation systems. <br>&ensp;&ensp; <b>Taste Buddies: The Food Counsellor</b> platform connects customers serving their multiple needs. Customers use our platform to search and discover what meal they should take. When the user is confused, the web application will propose a meal to the user based on their history of categories and meals selected. The web application can be used to explore food options filtering as per their dietary constrictions and requirements. Also our website recommend or suggest the meal according to users requirement: according to the cuisine, vegetarian, non-vegetarian, satvik, sugar free, vegan, high or low protein. When a user selects a meal the website will provide all the information about the meal. Website will guide the user in preparation of the meal, right form the time taken, ingredient used, quantity, steps by step making. With the help of Taste buddies the user will be able to decide their meals quickly. </div>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+        <div class="row" name="team1">
+            <div class="col-lg-12 col-sm-12 col-md-12 col-xl-12 col-xs-12">
+                <div class="site-heading text-center">
+                    <h2>Our <span>Team</span>
+                    </h2>
+                    <h4>Meet our awesome and expert team members</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row team-items">
+            <div class="col-md-3 single-item">
+                <div class="item">
+                    <div class="thumb" style="background:#f2f2f2;">
+                        <center>
+                            <img class="img-fluid" style="height: 255px;" src="https://i.ibb.co/8Mq1YNW/Whats-App-Image-2022-11-20-at-12-01-52.jpg" alt="Suyog Mahagaonkar">
+                        </center>
+                        <div class="overlay">
+                            <h4>Suyog Mahagaonkar</h4>
+                            <p> A student at VIIT, pune. </p>
+                            <hr>
+                            <div class="social">
+                                <ul>
+                                    <li class="facebook">
+                                        <a href="https://sq-al.facebook.com/suyog.mahagaonkar.7/">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="instagram">
+                                        <a href="https://www.instagram.com/invites/contact/?i=1d7dwezyza0ci&utm_content=31fg7cz">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="whatsapp">
+                                        <a href="https://wa.me/8208055809">
+                                            <i class="fab fa-whatsapp"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <span class="message">
+                            <a href="#">
+                                <i class="fas fa-envelope-open"></i>
+                            </a>
+                        </span>
+                        <h4>Suyog Mahagaonkar</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 single-item">
+                <div class="item">
+                    <div class="thumb">
+                        <img class="img-fluid" style="height: 255px;" src="https://i.ibb.co/FBJCx1g/Whats-App-Image-2022-11-20-at-11-45-21.jpg" alt="Pratham Solanki">
+                        <div class="overlay">
+                            <h4>Pratham Solanki</h4>
+                            <p> A student at VIIT, pune. </p>
+                            <hr>
+                            <div class="social">
+                                <ul>
+                                    <li class="facebook">
+                                        <a href="#">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="instagram">
+                                        <a href="#">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="whatsapp">
+                                        <a href="https://web.whatsapp.com/send/?phone=7066102299&text&type=phone_number&app_absent=0">
+                                            <i class="fab fa-whatsapp"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <span class="message">
+                            <a href="#">
+                                <i class="fas fa-envelope-open"></i>
+                            </a>
+                        </span>
+                        <h4>Pratham Solanki</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 single-item">
+                <div class="item">
+                    <div class="thumb">
+                        <img class="img-fluid" src="https://media-exp1.licdn.com/dms/image/C5603AQGOiDtsM3yAMQ/profile-displayphoto-shrink_800_800/0/1590593053187?e=1674086400&v=beta&t=-aOccLWMOlYuA9RA0FEqYkQJO-j5Or_uVv2n_87g7S4" alt="Thumb">
+                        <div class="overlay">
+                            <h4>Srushti Khandade</h4>
+                            <p> A student at VIIT, pune. </p>
+                            <hr>
+                            <div class="social">
+                                <ul>
+                                    <li class="facebook">
+                                        <a href="#">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="instagram">
+                                        <a href="#">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="whatsapp">
+                                        <a href="#">
+                                            <i class="fab fa-whatsapp"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <span class="message">
+                            <a href="#">
+                                <i class="fas fa-envelope-open"></i>
+                            </a>
+                        </span>
+                        <h4>Srushti khandade</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 single-item">
+                <div class="item">
+                    <div class="thumb">
+                        <img class="img-fluid" style="height:255px;" src="https://i.ibb.co/82Xsgb7/278191805-513167483589279-2860513177553529138-n.jpg" alt="278191805-513167483589279-2860513177553529138-n" border="0">
+                        <div class="overlay">
+                            <h4>Siddharth Kavthekar</h4>
+                            <p> A student at VIIT, pune. </p>
+                            <hr>
+                            <div class="social">
+                                <ul>
+                                    <li class="facebook">
+                                        <a href="#">
+                                            <i class="fab fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="instagram">
+                                        <a href="#">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="whatsapp">
+                                        <a href="#">
+                                            <i class="fab fa-whatsapp"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <span class="message">
+                            <a href="#">
+                                <i class="fas fa-envelope-open"></i>
+                            </a>
+                        </span>
+                        <h4>Siddharth Kavthekar</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="site-heading text-center">
+                    <h2>Meet <span>Sponsors</span>
+                    </h2>
+                    <h4>Special Thanks to Sponsored members</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row col-lg-12 col-sm-12 col-md-12 col-xl-12 col-xs-12">
+            <div class="col-md-2 ">
+                <img style="height:80px;position:relative;left:80px;" src="data:image/png;base64,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">
+            </div>
+            <div class="col-md-4 ">
+                <h2 style="font-family: Google Sans,arial,sans-serif-medium,sans-serif;font-size: 28px;line-height: 36px;"> Vishwakarma Institute of Information Technology </h2>
+                <div class="wx62f PZPZlf x7XAkb" data-attrid="subtitle">Institute in Pune, Maharashtra.</div>
+            </div>
+            <div class="col-md-2 ">
+                <img style="height:120px;position:relative;left:20px;top:-10px;" src="data:image/jpeg;base64,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">
+            </div>
+            <div class="col-md-4 ">
+                <h2 style="font-family: Google Sans,arial,sans-serif-medium,sans-serif;font-size: 28px;line-height: 36px;"> TechHut </h2>
+                <div class="wx62f PZPZlf x7XAkb" data-attrid="subtitle">A Software Company</div>
+                <div class="wx62f PZPZlf x7XAkb" data-attrid="subtitle">Pune, Maharashtra.</div>
+            </div>
+        </div>
+    </div>
+</section> {% include 'main/footer.html' %} <script>
+    particlesJS("particles-js", {
+        "particles": {
+            "number": {
+                "value": 33,
+                "density": {
+                    "enable": true,
+                    "value_area": 1420.4657549380909
+                }
+            },
+            "color": {
+                "value": "#ffffff"
+            },
+            "shape": {
+                "type": "triangle",
+                "stroke": {
+                    "width": 0,
+                    "color": "blue"
+                },
+                "polygon": {
+                    "nb_sides": 100
+                },
+                "image": {
+                    "src": "img/github.svg",
+                    "width": 100,
+                    "height": 100
+                }
+            },
+            "opacity": {
+                "value": 0.06313181133058181,
+                "random": false,
+                "anim": {
+                    "enable": false,
+                    "speed": 1,
+                    "opacity_min": 0.1,
+                    "sync": false
+                }
+            },
+            "size": {
+                "value": 11.83721462448409,
+                "random": true,
+                "anim": {
+                    "enable": false,
+                    "speed": 140,
+                    "size_min": 0.1,
+                    "sync": false
+                }
+            },
+            "line_linked": {
+                "enable": true,
+                "distance": 250,
+                "color": "#ffffff",
+                "opacity": 0.4,
+                "width": 1
+            },
+            "move": {
+                "enable": true,
+                "speed": 6,
+                "direction": "none",
+                "random": false,
+                "straight": false,
+                "out_mode": "out",
+                "bounce": false,
+                "attract": {
+                    "enable": false,
+                    "rotateX": 600,
+                    "rotateY": 1200
+                }
+            }
+        },
+        "interactivity": {
+            "detect_on": "canvas",
+            "events": {
+                "onhover": {
+                    "enable": true,
+                    "mode": "repulse"
+                },
+                "onclick": {
+                    "enable": true,
+                    "mode": "push"
+                },
+                "resize": true
+            },
+            "modes": {
+                "grab": {
+                    "distance": 400,
+                    "line_linked": {
+                        "opacity": 1
+                    }
+                },
+                "bubble": {
+                    "distance": 400,
+                    "size": 40,
+                    "duration": 2,
+                    "opacity": 8,
+                    "speed": 3
+                },
+                "repulse": {
+                    "distance": 200,
+                    "duration": 0.4
+                },
+                "push": {
+                    "particles_nb": 4
+                },
+                "remove": {
+                    "particles_nb": 2
+                }
+            }
+        },
+        "retina_detect": true
+    });
+</script> {% endblock main_body %}

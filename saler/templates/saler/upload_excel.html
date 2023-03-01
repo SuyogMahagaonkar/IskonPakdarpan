@@ -1,0 +1,28 @@
+{% extends 'saler/base.html' %}
+{% block saler_head %}
+{% endblock saler_head %}
+{% load crispy_forms_tags %}
+{% block saler_body %}
+
+<h4>Import Excel</h4>
+
+		<form method="post" enctype="multipart/form-data">{% csrf_token %}
+			<div class="col-md-6">
+				<div class="row">
+			<div class="col-md">
+			  <div class="form-group">
+
+			    <input type="file" accept=".xlsx" class="form-control clearablefileinput " id="import" name="import" placeholder="Upload Excel data" required>
+			  </div>
+			</div>
+				<div class="col-md-4">
+					<button type="submit" class="btn btn-secondary"
+			style=" border: none; width: 100%;">Upload</button>
+				</div></div></div>
+
+
+	</form>
+
+	<hr style="height:20px;background:black">
+
+{% endblock saler_body %}

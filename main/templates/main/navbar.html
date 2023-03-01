@@ -1,0 +1,83 @@
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark  ">
+
+  <a class="navbar-brand" >{% include "main/logo.html" %}</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>&emsp;&emsp;&emsp;&emsp;&emsp;
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav ml-auto">
+
+				<form class="form-inline my-0 my-lg-0" action="/search">
+		      <div class="input-group">
+				  <input name="query" type="search" class="form-control mr-sm-1" placeholder="search food..." />
+				  <div class="input-group-append">
+				    <button class="btn btn-outline-success my-1 my-sm-0" type="submit" id="button-addon2">Search</button>
+				  </div>
+				</div>
+		    </form>
+
+		      <li class="nav-item">
+		        <a class="nav-link " href="/">Home</a>
+		      </li>
+				 <li class="nav-item">
+		        <a class="nav-link " href="{% url 'Team' %}" >About</a>
+		      </li>
+		{% if user.is_authenticated %}
+		<li class="nav-item">
+		        <a class="nav-link " href="{% url 'Recommand' %}" >Recommend</a>
+		      </li>
+		{%else%}
+		<li class="nav-item">
+		        <a class="nav-link " href="{% url 'random_recomandation' %}" >Recommend</a>
+		      </li>
+		{%endif%}
+		      <li class="nav-item" hidden>
+		        <a data-container="body" data-toggle="popover" data-placement="bottom" data-trigger="hover" data-html="true" data-content="{%if cart_element_no%}Hurray,<strong> {{cart_element_no}}</strong> items in cart{%else%}add items in a cart{%endif%}"class="nav-link text-dark" href="{% url 'main_cart' %}"><i class="fa fa-shopping-cart"></i> Cart (<span id="cart_no">{% if user.is_authenticated %}{{cart_element_no}}{%else%}0{%endif%}</span>)</a>
+		      </li>
+				{% if user.is_authenticated %}
+		      <li class="nav-item dropdown">
+		        <a class="nav-link  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<i class="fa fa-user"></i>&nbsp;Hello, {%if user.is_superuser%}<strong>Admin</strong>{%else%}<strong>{{request.user.first_name}}</strong>{%endif%}
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+		        	<a class="dropdown-item" href="{% url 'myorders' %}" hidden>My Order</a>
+					<a class="dropdown-item"href="{% url 'account_settings' %}">Account Settings</a>
+		        	<a class="dropdown-item" href="{% url 'logout' %}">Logout</a>
+
+		        </div>
+		      </li>
+		{% else %}
+		<li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<i class="fa fa-user"></i>&nbsp;Login/Signup
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="nav-link text-dark" href="{% url 'login' %}">Login</a>
+					<a class="nav-link text-dark" href="{% url 'signup' %}">Register</a>
+					<a class="nav-link text-dark" href="{% url 'seller_signup' %} "  >Restro Owner</a>
+		        </div>
+		      </li>
+<!--		 <li class="nav-item">-->
+<!--		        <a class="nav-link text-dark" href="{% url 'login' %}">Login</a></li>-->
+<!--			 <li class="nav-item">-->
+<!--				<a class="nav-link text-dark" href="{% url 'signup' %}">Register</a></li>-->
+<!--		<li class="nav-item" hidden>-->
+<!--				<a class="nav-link text-dark" href="{% url 'seller_signup' %}">Seller</a>-->
+<!--		</li>-->
+		{% endif %}
+		    </ul>
+
+  </div>
+
+</nav>
+<style>
+	.mt-1, .my-1 {
+    margin-top: 0rem!important;
+}
+.navbar-toggler-icon {
+    width: 1.2em;
+    height: 1.2em;}
+</style>

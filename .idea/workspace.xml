@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7a042557-1ffc-4779-8ac3-7c0e2b957d0d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/food.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/food_list.pkl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/static/main/images/title_img.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/templates/main/History_recommand_result.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/templates/main/Recommand.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/templates/main/darkmode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/templates/main/dropdown_recommand_result.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/templates/main/random_recomandation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main/templates/main/save_history_recomandation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/recommandations.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/similarity.pkl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Wrappers-India-Online-master.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Wrappers-India-Online-master.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/installed_pips.txt" beforeDir="false" afterPath="$PROJECT_DIR$/installed_pips.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/Card-layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/Card-layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/Team.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/Team.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/TextAnimation.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/TextAnimation.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/account_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/account_base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/account_settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/account_settings.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/checkout2.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/checkout2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/img-zooming.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/img-zooming.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/logo.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/logo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/password_reset_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/password_reset_complete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/single.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/view_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/view_all.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/templates/main/view_dow.html" beforeDir="false" afterPath="$PROJECT_DIR$/main/templates/main/view_dow.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/main/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/brand_imgs/AttiTudeLOGO.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/-original-imafdfvvr8hqdu65.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/52507-14-skechers-bbk-original-imafyv2fze3zagpy.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/52507-14-skechers-bbk-original-imafyv2fzgpf7xmr.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/8125abdq1-card-holder-abys-original-imafynysp4xagnt6.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/8906054462899spidermanhockey-hockey-kit-marvel-original-imafk4yureahxjsf.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/8906054463506-badminton-doraemon-original-imafy3pfzs2fdgne.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/bow-and-arrow-toy-set-with-3-suction-arrow-archery-kit-archery-original_502ifMm.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/combo-2-1200-9126-10-axter-multicolor-original-imafte2k6hhqxrrh.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/for-u-38-shoetopia-pink-original-imafkmfxbereqfh9.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/for-u-38-shoetopia-pink-original-imafkmfxkwwytzas.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/for-u-38-shoetopia-pink-original-imafkmfxsehwhgyp.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/for-u-38-shoetopia-pink-original-imafkmfxypjzzxey.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/general-science-technology-for-civil-services-pt-mains-state-psc-origin_R7WchMl.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/general-science-technology-for-civil-services-pt-mains-state-psc-origin_TWFXwuz.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/gitaktan-gitaktan-wallet-nice-purse-original-imafzgpw3bggkvec.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/gitaktan-gitaktan-wallet-nice-purse-original-imafzgpwyrrsmweu.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/idli.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/kids-hot-fire-soft-bullet-toy-gun7643-m-original-imaew92y2nksx6ad.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/kisspng-rava-idli-dosa-indian-cuisine-sambar-indian-food-5abf14f38211d2._dwtyyrG.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/kisspng-rava-idli-dosa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/kisspng-south-indian-cuisine-south.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/kyle-ubf130chp1037-wallet-urban-forest-original-imafpmtvyh4n2thf.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/kyle-ubf130chp1037-wallet-urban-forest-original-imafpucfgdzbbuac.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/kyle-ubf130chp1037-wallet-urban-forest-original-imafpucfuuegndfz.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/kyle-ubf130chp1037-wallet-urban-forest-original-imafpucfuuegndfz_4aciFgf.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/l-3014-lf-original-imaezyd2a2ham6my.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/lmtcasual-gray-black-10-sqr-multicolor-original-imaftz6bmazngjxb.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/lmtcasual-gray-black-10-sqr-multicolor-original-imaftz6bmazngjxb_ge4aFkB.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/lr-wl03-nsf-original-imaffhfjydqde9yh.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/m-collar-try-this-original-imafw2umbnq7hpcr.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/m-sksh-110-bk-protocol-original-imaftrr6kfvrpznq.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/m-sksh-110-bk-protocol-original-imaftrr6kfvrpznq_Hi9qHpv.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/m-w09-fs-crack-white-lewel-original-imafpyzrhwd4wpgs.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/objective-general-english-original-imafspq6hcj4gghc.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/rfid-protected-100-genuine-high-quality-mens-blue-hunter-leather-origin_TBrKRq1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/rfid-protected-100-genuine-high-quality-mens-blue-hunter-leather-origin_dS0MeGE.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/rfid-protected-100-genuine-high-quality-mens-blue-hunter-leather-origin_ly6Bn8h.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/s-101-try-this-original-imafuvgbqkvhtmwp.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/s-c301-white-dennis-lingo-original-imafw2ggrk5epcfu.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/s-w09-fs-crack-white-lewel-original-imafpyzrtwr8hygk.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/s-w09-fst-crack-white-lewel-original-imafw2gxzqw9xtzb.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/shirt1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/shirt2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/shirt3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/spiderman-boxing-shribossji-original-imaffzpg4grzh6zx.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/spiderman-small-bat-ball-wicket-set-plastic-cricket-marvel-original-ima_CwUPfyI.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/unique-robot-deform-super-speed-car-with-3d-special-light-yellow-origin_nLWZs5J.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/women-s-synthetic-leather-handbag-and-sling-bags-combo-of-4-qf-n-origin_xgU2Iu2.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/wp1.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/wp1_czJt1iD.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/xl-w09-fs-crack-white-lewel-original-imafpyzrsgszczxf.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/xl-w09-fs-crack-white-lewel-original-imafpyzrvstztfh9.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/xl-ww-3part-hood-mustard-tap-in-original-imafn3hgtzjvenjf.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/xxl-wmlhs-025-wht-minimalist-clothing-original-imafuah6dfwgz5fv.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/xxl-wmlhs-025-wht-minimalist-clothing-original-imafuah6dydjqhrz.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/products/images/xxl-yst-try-this-original-imafvvbggzgfhfzx.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/saler/migrations/0019_auto_20210809_1410.py" beforeDir="false" afterPath="$PROJECT_DIR$/saler/migrations/0019_auto_20210809_1410.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saler/migrations/0020_auto_20210809_1454.py" beforeDir="false" afterPath="$PROJECT_DIR$/saler/migrations/0020_auto_20210809_1454.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saler/migrations/0021_auto_20210810_2126.py" beforeDir="false" afterPath="$PROJECT_DIR$/saler/migrations/0021_auto_20210810_2126.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saler/migrations/0022_auto_20210810_2243.py" beforeDir="false" afterPath="$PROJECT_DIR$/saler/migrations/0022_auto_20210810_2243.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saler/migrations/0023_product_specs.py" beforeDir="false" afterPath="$PROJECT_DIR$/saler/migrations/0023_product_specs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saler/migrations/0024_remove_product_specs.py" beforeDir="false" afterPath="$PROJECT_DIR$/saler/migrations/0024_remove_product_specs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saler/migrations/0025_product_specs.py" beforeDir="false" afterPath="$PROJECT_DIR$/saler/migrations/0025_product_specs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saler/migrations/0026_auto_20221115_1553.py" beforeDir="false" afterPath="$PROJECT_DIR$/saler/migrations/0026_auto_20221115_1553.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saler/migrations/0027_auto_20221120_2006.py" beforeDir="false" afterPath="$PROJECT_DIR$/saler/migrations/0027_auto_20221120_2006.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saler/migrations/0028_auto_20221120_2010.py" beforeDir="false" afterPath="$PROJECT_DIR$/saler/migrations/0028_auto_20221120_2010.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saler/migrations/0029_auto_20221120_2011.py" beforeDir="false" afterPath="$PROJECT_DIR$/saler/migrations/0029_auto_20221120_2011.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saler/migrations/0030_auto_20221120_2012.py" beforeDir="false" afterPath="$PROJECT_DIR$/saler/migrations/0030_auto_20221120_2012.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saler/migrations/0031_auto_20221120_2013.py" beforeDir="false" afterPath="$PROJECT_DIR$/saler/migrations/0031_auto_20221120_2013.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saler/migrations/0032_auto_20221120_2020.py" beforeDir="false" afterPath="$PROJECT_DIR$/saler/migrations/0032_auto_20221120_2020.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saler/migrations/0033_auto_20221120_2027.py" beforeDir="false" afterPath="$PROJECT_DIR$/saler/migrations/0033_auto_20221120_2027.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saler/migrations/0034_remove_product_image1.py" beforeDir="false" afterPath="$PROJECT_DIR$/saler/migrations/0034_remove_product_image1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saler/migrations/0035_product_image1.py" beforeDir="false" afterPath="$PROJECT_DIR$/saler/migrations/0035_product_image1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saler/migrations/0036_auto_20221121_0727.py" beforeDir="false" afterPath="$PROJECT_DIR$/saler/migrations/0036_auto_20221121_0727.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saler/migrations/0037_auto_20221121_0756.py" beforeDir="false" afterPath="$PROJECT_DIR$/saler/migrations/0037_auto_20221121_0756.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saler/migrations/0038_auto_20221121_0812.py" beforeDir="false" afterPath="$PROJECT_DIR$/saler/migrations/0038_auto_20221121_0812.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saler/migrations/0039_auto_20221121_0826.py" beforeDir="false" afterPath="$PROJECT_DIR$/saler/migrations/0039_auto_20221121_0826.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saler/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/saler/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saler/templates/saler/logo.html" beforeDir="false" afterPath="$PROJECT_DIR$/saler/templates/saler/logo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saler/templates/saler/upload_excel.html" beforeDir="false" afterPath="$PROJECT_DIR$/saler/templates/saler/upload_excel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saler/templates/saler/view_all.html" beforeDir="false" afterPath="$PROJECT_DIR$/saler/templates/saler/view_all.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saler/templates/saler/view_products.html" beforeDir="false" afterPath="$PROJECT_DIR$/saler/templates/saler/view_products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saler/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/saler/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/.github/ISSUE_TEMPLATE/bug_report.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/.github/ISSUE_TEMPLATE/bug_report.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/.github/ISSUE_TEMPLATE/feature_request.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/.github/ISSUE_TEMPLATE/feature_request.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/.github/ISSUE_TEMPLATE/question.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/.github/ISSUE_TEMPLATE/question.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/.github/pull_request_template.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/.github/pull_request_template.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/.github/stale.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/.github/stale.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/.github/workflows/django-import-export-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/.github/workflows/django-import-export-ci.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/AUTHORS" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/AUTHORS" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/CODE_OF_CONDUCT.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/CODE_OF_CONDUCT.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/CONTRIBUTING.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/CONTRIBUTING.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/MANIFEST.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/MANIFEST.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/README.rst" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/README.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/RELEASE.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/RELEASE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/docs/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/docs/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/docs/api_admin.rst" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/docs/api_admin.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/docs/api_fields.rst" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/docs/api_fields.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/docs/api_forms.rst" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/docs/api_forms.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/docs/api_instance_loaders.rst" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/docs/api_instance_loaders.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/docs/api_resources.rst" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/docs/api_resources.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/docs/api_results.rst" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/docs/api_results.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/docs/api_tmp_storages.rst" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/docs/api_tmp_storages.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/docs/api_widgets.rst" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/docs/api_widgets.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/docs/bulk_import.rst" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/docs/bulk_import.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/docs/celery.rst" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/docs/celery.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/docs/changelog.rst" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/docs/changelog.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/docs/conf.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/docs/conf.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/docs/getting_started.rst" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/docs/getting_started.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/docs/import_workflow.rst" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/docs/import_workflow.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/docs/index.rst" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/docs/index.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/docs/installation.rst" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/docs/installation.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/docs/make.bat" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/docs/make.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/docs/testing.rst" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/docs/testing.rst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/fields.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/fields.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/formats/base_formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/formats/base_formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/instance_loaders.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/instance_loaders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/locale/ar/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/locale/ar/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/locale/bg/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/locale/bg/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/locale/ca/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/locale/ca/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/locale/cs/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/locale/cs/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/locale/de/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/locale/de/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/locale/es/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/locale/es/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/locale/es_AR/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/locale/es_AR/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/locale/fa/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/locale/fa/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/locale/fr/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/locale/fr/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/locale/it/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/locale/it/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/locale/ja/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/locale/ja/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/locale/ko/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/locale/ko/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/locale/kz/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/locale/kz/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/locale/nl/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/locale/nl/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/locale/pl/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/locale/pl/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/locale/pt_BR/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/locale/pt_BR/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/locale/ru/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/locale/ru/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/locale/sk/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/locale/sk/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/locale/tr/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/locale/tr/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/locale/zh_Hans/LC_MESSAGES/django.po" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/locale/zh_Hans/LC_MESSAGES/django.po" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/mixins.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/mixins.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/resources.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/resources.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/results.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/results.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/signals.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/signals.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/static/import_export/action_formats.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/static/import_export/action_formats.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/static/import_export/guess_format.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/static/import_export/guess_format.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/static/import_export/import.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/static/import_export/import.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/templates/admin/import_export/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/templates/admin/import_export/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/templates/admin/import_export/change_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/templates/admin/import_export/change_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/templates/admin/import_export/change_list_export.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/templates/admin/import_export/change_list_export.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/templates/admin/import_export/change_list_export_item.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/templates/admin/import_export/change_list_export_item.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/templates/admin/import_export/change_list_import.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/templates/admin/import_export/change_list_import.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/templates/admin/import_export/change_list_import_export.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/templates/admin/import_export/change_list_import_export.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/templates/admin/import_export/change_list_import_item.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/templates/admin/import_export/change_list_import_item.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/templates/admin/import_export/export.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/templates/admin/import_export/export.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/templates/admin/import_export/import.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/templates/admin/import_export/import.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/templatetags/import_export_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/templatetags/import_export_tags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/tmp_storages.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/tmp_storages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/import_export/widgets.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/import_export/widgets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/requirements/base.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/requirements/base.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/requirements/deploy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/requirements/deploy.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/requirements/docs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/requirements/docs.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/requirements/test.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/requirements/test.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/runtests.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/runtests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/runtests.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/runtests.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/setup.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/setup.cfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/books-sample.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/books-sample.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/exports/books-ISO-8859-1.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/exports/books-ISO-8859-1.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/exports/books-for-delete.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/exports/books-for-delete.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/exports/books-mac.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/exports/books-mac.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/exports/books-unicode.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/exports/books-unicode.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/exports/books-unicode.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/exports/books-unicode.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/exports/books.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/exports/books.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/exports/child.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/exports/child.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/fixtures/book.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/fixtures/book.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/fixtures/category.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/fixtures/category.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/migrations/0002_book_published_time.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/migrations/0002_book_published_time.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/migrations/0003_withfloatfield.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/migrations/0003_withfloatfield.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/migrations/0004_bookwithchapters.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/migrations/0004_bookwithchapters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/migrations/0005_addparentchild.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/migrations/0005_addparentchild.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/migrations/0006_auto_20171130_0147.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/migrations/0006_auto_20171130_0147.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/migrations/0007_auto_20180628_0411.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/migrations/0007_auto_20180628_0411.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/migrations/0008_auto_20190409_0846.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/migrations/0008_auto_20190409_0846.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/migrations/0009_auto_20211111_0807.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/migrations/0009_auto_20211111_0807.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/migrations/0010_uuidbook.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/migrations/0010_uuidbook.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/migrations/0011_uuidcategory_legacybook_alter_uuidbook_id_and_more.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/migrations/0011_uuidcategory_legacybook_alter_uuidbook_id_and_more.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/templates/core/admin/change_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/templates/core/admin/change_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/templates/core/category_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/templates/core/category_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_admin_integration.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_admin_integration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_base_formats.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_base_formats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_fields.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_fields.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_import_export_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_import_export_tags.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_instance_loaders.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_instance_loaders.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_invalidrow.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_invalidrow.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_mixins.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_mixins.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_permissions.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_permissions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_resources.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_resources.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_results.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_results.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_tmp_storages.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_tmp_storages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_widgets.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/tests/test_widgets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/core/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/core/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/docker/db/init-mysql-db.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/docker/db/init-mysql-db.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/docker/db/init-postgres-db.sh" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/docker/db/init-postgres-db.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/scripts/bulk_import.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/scripts/bulk_import.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tests/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tests/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/django-import-export/tox.ini" beforeDir="false" afterPath="$PROJECT_DIR$/src/django-import-export/tox.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pip-delete-this-directory.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/pip-delete-this-directory.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wrappers/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/wrappers/urls.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="1wABBswmysC8cz4Fjjtyn0IHhfj" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "/home/suyog/Desktop/Projects/TasteBuddies"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\91779\Desktop\Projects\TasteBuddies\main\static\main\images" />
+      <recent name="C:\Users\91779\Desktop\Projects\TasteBuddies" />
+      <recent name="C:\Users\91779\Desktop\Projects\Wrappers-India-Online-master\main\static\main\images" />
+      <recent name="C:\Users\91779\Desktop\Wrappers-India-Online-master\main\static\main\images" />
+      <recent name="C:\Users\91779\Desktop\Wrappers-India-Online-master\main\templates\main" />
+    </key>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7a042557-1ffc-4779-8ac3-7c0e2b957d0d" name="Default Changelist" comment="" />
+      <created>1627891380424</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1627891380424</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
+  </component>
+</project>
